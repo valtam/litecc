@@ -1,0 +1,38 @@
+#!/bin/bash
+
+APPNAME="remmina"
+        
+        zenity --question --title="$APPNAME Installer" \
+        --text="This will install $APPNAME. Would you like to start it now?"
+
+                if [ "$?" -eq "0" ]; then
+                        gksudo "sudo apt-get install $APPNAME -y" | zenity --progress --title="Installing $APPNAME" --text="Please wait this may take a while..." --pulsate --width=400 --auto-close
+
+
+                                if [ "${PIPESTATUS[0]}" -ne "0" ]; then
+                        
+                                        zenity --error \
+                                        --title="Error" --text="$APPNAME could not be installed."
+                                        exit 0
+                                fi
+
+                else
+
+                                        exit 0
+                fi
+
+
+
+
+zenity --error --title="$APPNAME Status" --text="$APPNAME successfully installed."
+
+# Offer to launch the program at completion of the install.
+PROCEED=$(zenity --question --title="Linux Lite Additional Programs Installer" --window-icon=/usr/share/icons/zenity_ll.png --text="Would you like to launch the program now?"; echo $?)
+if [ ${PROCEED} -eq 1 ]; then
+	zenity --info --title="Finished" --window-icon="${INSTALL_ICON}" --text="Install Complete.\n\nRemmina is located in Menu, Internet"
+	exit;
+else
+	remmina
+fi
+
+exit 0

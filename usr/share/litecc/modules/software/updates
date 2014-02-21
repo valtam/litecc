@@ -1,0 +1,5 @@
+[module]
+name = Install Updates
+ico = gdebi.png
+desc = Update your computer.
+command = lxterminal -e /usr/scripts/./updates

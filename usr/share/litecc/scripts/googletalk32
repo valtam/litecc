@@ -1,0 +1,16 @@
+#!/bin/bash
+cd /tmp
+wget https://dl.google.com/linux/direct/google-talkplugin_current_i386.deb
+clear
+
+echo "***********************************************"
+echo "Please type in your password and press enter..."
+echo "***********************************************"
+echo " "
+
+sudo dpkg -i google-talkplugin*
+sudo apt-get install -f --force-yes -y
+rm -rf google-talkplugin*
+
+zenity --info --text 'Successfully Installed' --title 'Complete'
+exit

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" DIR="{DIR_dir}">
+<head>
+	<meta charset="utf-8" >
+	<link media="all" rel="stylesheet" type="text/css" href="css/main.css" />
+	
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+
+</head>
+<body>
+	<div id="wrapper">
+	
+		<div id="content">
+			<div class="c1">
+
+				<div class="tabs">
+					<div id="tab-1" class="tab">
+						<article>
+							<div class="text-section">
+								<img id="solgan" src="icons/sys_info.png" />
+								<h1>{string_1}</h1>
+								<p>{string_2}</p>
+							</div>
+						</article>
+						<div id="contents">
+						<h1>{string_3}</h1>
+						<p>{string_4}<span id="ty">{os}</span></p>
+						<p>{string_5}<span id="ty">{processor}</span></p>
+						<p>{string_6}<span id="ty">{arc}</span></p>
+						<p>{string_7}<span id="ty">{mem}</span></p>
+						<p>{string_13}<span id="ty">{host}</span></p>
+						<p>{string_14}<span id="ty">{kernel}</span></p>
+						<h1>{string_8}</h1>
+						<p>{string_9}<span id="ty">{gfx}</span></p>
+						<p>{string_10}<span id="ty">{audio}</span></p>
+						<h1>{string_32}</h1>
+						<p>{string_30}<span id="ty">{netstatus}</span></p>
+						<p>{string_31}<span id="ty">{netip}</span></p>
+						<br>
+						<div class="link" onclick="location.href=('help://')"><img src="images/help.png" ><p>{string_27}</p></div>
+						<div class="link" onclick="location.href=('forum://')"><img src="images/forum.svg" ><p>{string_26}</p></div>
+						<div class="link" onclick="location.href=('irc://')"><img src="images/xchat.png" ><p>{string_48}</p></div>
+						<div class="link" onclick="location.href=('website://')"><img src="images/website.png" ><p>{string_47}</p></div>
+						<div class="link" onclick="location.href=('facebook://')"><img src="images/facebook.png" ><p>{string_49}</p></div>
+						<div class="link" onclick="location.href=('twitter://')" ><img src="images/twitter.png" ><p>{string_50}</p></div>
+						<div class="link" onclick="location.href=('google://')" ><img src="images/googleplus.png" ><p>{string_51}</p></div>
+						<div class="export_details" onclick="location.href='exportdetails://hi'" ><span></span>{string_37}</div>
+						 
+						</div>
+					</div>
+					<div id="tab-2" class="tab">
+						<article>
+							<div class="text-section">
+								<img id="solgan" src="icons/packages.png" />
+								<h1>{string_16}</h1>
+								<p>{string_17}</p>
+								<img class="help" onclick="location.href=('help://')" src="images/help.png" >
+							</div>
+						</article>
+						<div id="contents">
+						{software_list}
+						<br><br>					
+						<br>
+						<div id="box">
+						<div id="box_title">{string_28}</div>
+						<div id="box_content">
+						<p>{string_29}</p>
+						<div align="center">
+						<a href="#" class="tooltip" onclick="location.href='script://skype'" ><span>Skype</span><img src="icons/skype.png" alt="skype" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://teamviewer'" ><span>Teamviewer</span><img src="icons/teamviewer.png" alt="teamviewer" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://chrome32'" ><span>Chrome 32bit</span><img src="icons/chrome.png" alt="google chrome" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://chromium32'" ><span>Chromium 32bit</span><img src="icons/chromium.png" alt="chromium" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://chrome64'" ><span>Chrome 64bit</span><img src="icons/chrome.png" alt="chrome" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://chromium64'" ><span>Chromium 64bit</span><img src="icons/chromium.png" alt="chromium" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://googletalk32'" ><span>Google Talk Plugin 32bit</span><img src="icons/googletalk.png" alt="googletalk" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://googletalk64'" ><span>Google Talk Plugin 64bit</span><img src="icons/googletalk.png" alt="googletalk" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://javaplugin'" ><span>Java Web Plugin</span><img src="icons/javaplugin.png" alt="javaplugin" ></a>
+						<br><br>
+						<a href="#" class="tooltip" onclick="location.href='script://dropbox32'" ><span>Dropbox 32bit</span><img src="icons/dropbox.png" alt="dropbox" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://dropbox64'" ><span>Dropbox 64bit</span><img src="icons/dropbox.png" alt="dropbox" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://xbmc'" ><span>XBMC</span><img src="icons/xbmc.png" alt="xbmc" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://netflix'" ><span>Netflix</span><img src="icons/netflix.png" alt="netflix" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://trailers'" ><span>Watch Apple Trailers</span><img src="icons/trailers.png" alt="trailers" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://search'" ><span>File & Folder Search</span><img src="icons/search.png" alt="search" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://im'" ><span>Instant Messenger</span><img src="icons/im.png" alt="im" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://idev'" ><span>iDevices Manager</span><img src="icons/idev.png" alt="idev" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://remote'" ><span>Remote Desktop</span><img src="icons/remote.png" alt="remote" ></a>
+						<br><br>
+						<a href="#" class="tooltip" onclick="location.href='script://test'" ><span>Remote Desktop</span><img src="icons/remote.png" alt="remote" ></a>						
+						</div>
+						</div>
+						</div>
+						</div>
+						
+						
+					</div>
+					<div id="tab-3" class="tab">
+						<article>
+							<div class="text-section">
+								<img id="solgan" src="icons/desktop.png" />
+								<h1>{string_18}</h1>
+								<p>{string_19}</p>
+								<img class="help" onclick="location.href=('help://')" src="images/help.png" >
+							</div>
+						</article>
+						<div id="contents">
+						{desktop_list}
+						<br><br>
+						<div id="box">
+						<div id="box_title">{string_35}</div>
+						<div id="box_content"><p>{string_36}</p>
+						<div align="center">					
+						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
+						</div>	
+						</div>
+						</div>
+						</div>
+					</div>
+					<div id="tab-4" class="tab">
+						<article>
+							<div class="text-section">
+								<img id="solgan" src="icons/system.png" />
+								<h1>{string_20}</h1>
+								<p>{string_21}</p>
+								<img class="help" onclick="location.href=('help://')" src="images/help.png" >
+							</div>
+						</article>
+						<div id="contents">
+						{system_list}
+						</div>
+					</div>
+					<div id="tab-5" class="tab">
+						<article>
+							<div class="text-section">
+								<img id="solgan" src="icons/hardware.png" />
+								<h1>{string_22}</h1>
+								<p>{string_23}</p>
+								<img class="help" onclick="location.href=('help://')" src="images/help.png" >
+							</div>
+						</article>
+						<div id="contents">
+						{hardware_list}
+						<br><br>
+						<div id="box">
+						<div id="box_title">{string_41}</div>
+						<div id="box_content"><p>{string_42}</p>
+						<div align="center">	
+						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
+						</div>
+						</div>
+						</div>
+						</div>
+					</div>
+					<div id="tab-6" class="tab">
+						<article>
+							<div class="text-section">
+								<img id="solgan" src="icons/other.png" />
+								<h1>{string_24}</h1>
+								<p>{string_25}</p>
+							</div>
+						</article>
+						<div id="contents">
+						{other_list}
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<aside id="sidebar">
+			<strong class="logo"><a onclick="location.href='about://hi'" href="#"></a></strong>
+			<ul class="tabset buttons">
+				<li class="active">
+					<a href="#tab-1" class="ico1"><span>{string_1}</span><em></em></a>
+				</li>
+				<li>
+					<a href="#tab-2" class="ico2"><span>{string_16}</span><em></em></a>
+				</li>
+				<li>
+					<a href="#tab-3" class="ico3"><span>{string_18}</span><em></em></a>
+				</li>
+				<li>
+					<a href="#tab-4" class="ico4"><span>{string_20}</span><em></em></a>
+				</li>
+				<li>
+					<a href="#tab-5" class="ico5"><span>{string_22}</span><em></em></a>
+				</li>
+				<li>
+					<a href="#tab-6" class="ico6"><span>{string_24}</span><em></em></a>
+				</li>
+			</ul>
+			
+		</aside>
+	</div>
+<script type="text/javascript">
+function changeTitle(title) { document.title = title; document.title = 'none'; }
+function themeInst() {
+location.href='themeinstall://'+document.getElementById("file").value
+}
+</script>
+
+</body>
+</html>

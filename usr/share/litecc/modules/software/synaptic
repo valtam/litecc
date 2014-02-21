@@ -1,0 +1,5 @@
+[module]
+name = Manage Software
+ico = gdebi.png
+desc = Install & Remove software.
+command = gksudo synaptic
