@@ -46,7 +46,7 @@ if [ ${PROCEED} -eq 1 ]; then
 	zenity --info --title="Finished" --window-icon="${INSTALL_ICON}" --text="Install Complete.\n\n$APPNAME is located in Menu, Internet"
 	exit;
 else
-	/usr/bin/remmina
+	remmina
 fi
 
 exit 0

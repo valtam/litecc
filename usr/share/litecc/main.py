@@ -48,7 +48,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 MA 02110-1301, USA. ''')
-        	about.set_authors(["Johnathan 'ShaggyTwoDope' Jenkins\n<shaggytwodope@linuxliteos.com>""\nJerry Bezencon\n<valtam@linuxliteos.com>""\n\nOther Contributors:\npdq\nZoose\nArmageddon"])
+        	about.set_authors(["Johnathan 'ShaggyTwoDope' Jenkins <shaggytwodope@linuxliteos.com>"])
         	about.set_comments(("Designed for Linux Lite"))
         	about.set_website("http://www.linuxliteos.com")
         	about.set_logo(gtk.gdk.pixbuf_new_from_file("/usr/share/litecc/litecc.png"))

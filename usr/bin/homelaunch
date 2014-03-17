@@ -1,0 +1,2 @@
+#!/bin/bash
+exo-open --launch FileManager --working-directory ~/
