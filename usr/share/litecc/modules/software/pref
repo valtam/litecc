@@ -1,5 +1,5 @@
 [module]
 name = Preferred Applications
-ico = gdebi.png
-desc = Set default applications.
+ico = preferences.png
+desc = Set default applications
 command = exo-preferred-applications

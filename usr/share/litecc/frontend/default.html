@@ -45,8 +45,8 @@
 						<div class="link" onclick="location.href=('facebook://')"><img src="images/facebook.png" ><p>{string_49}</p></div>
 						<div class="link" onclick="location.href=('twitter://')" ><img src="images/twitter.png" ><p>{string_50}</p></div>
 						<div class="link" onclick="location.href=('google://')" ><img src="images/googleplus.png" ><p>{string_51}</p></div>
-						<div class="export_details" onclick="location.href='exportdetails://hi'" ><span></span>{string_37}</div>
-						 
+<!-- Future feature				<div class="export_details" onclick="location.href='exportdetails://hi'" ><span></span>{string_37}</div>
+						--> 
 						</div>
 					</div>
 					<div id="tab-2" class="tab">
@@ -65,29 +65,35 @@
 						<div id="box">
 						<div id="box_title">{string_28}</div>
 						<div id="box_content">
-						<p>{string_29}</p>
+						<p><center>{string_29} <br>Click <a href="#" onclick="location.href='script://helpmanual'" >here</a> to view a description for each piece of software.</center></p>
+						<br>
 						<div align="center">
-						<a href="#" class="tooltip" onclick="location.href='script://skype'" ><span>Skype</span><img src="icons/skype.png" alt="skype" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://teamviewer'" ><span>Teamviewer</span><img src="icons/teamviewer.png" alt="teamviewer" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://chrome32'" ><span>Chrome 32bit</span><img src="icons/chrome.png" alt="google chrome" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://chromium32'" ><span>Chromium 32bit</span><img src="icons/chromium.png" alt="chromium" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://chrome64'" ><span>Chrome 64bit</span><img src="icons/chrome.png" alt="chrome" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://chromium64'" ><span>Chromium 64bit</span><img src="icons/chromium.png" alt="chromium" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://googletalk32'" ><span>Google Talk Plugin 32bit</span><img src="icons/googletalk.png" alt="googletalk" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://googletalk64'" ><span>Google Talk Plugin 64bit</span><img src="icons/googletalk.png" alt="googletalk" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://javaplugin'" ><span>Java Web Plugin</span><img src="icons/javaplugin.png" alt="javaplugin" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://skype'" ><span>Install Skype</span><img src="icons/skype.png" alt="skype" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://chrome'" ><span>Install Chrome Web Browser</span><img src="icons/chrome.png" alt="google chrome" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://googletalk'" ><span>Install Google Hangouts Plugin</span><img src="icons/googletalk.png" alt="googletalk" ></a>						
+						<a href="#" class="tooltip" onclick="location.href='script://chromium'" ><span>Install Chromium Web Browser</span><img src="icons/chromium.png" alt="chromium" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://im'" ><span>Install Instant Messenger</span><img src="icons/im.png" alt="im" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://dropbox'" ><span>Install Dropbox</span><img src="icons/dropbox.png" alt="dropbox" ></a>					
+						<a href="#" class="tooltip" onclick="location.href='script://java'" ><span>Install Java</span><img src="icons/java.png" alt="java" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://javaplugin'" ><span>Install Java Web Applets Plugin</span><img src="icons/javaweb.png" alt="javaplugin" ></a>
 						<br><br>
-						<a href="#" class="tooltip" onclick="location.href='script://dropbox32'" ><span>Dropbox 32bit</span><img src="icons/dropbox.png" alt="dropbox" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://dropbox64'" ><span>Dropbox 64bit</span><img src="icons/dropbox.png" alt="dropbox" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://xbmc'" ><span>XBMC</span><img src="icons/xbmc.png" alt="xbmc" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://netflix'" ><span>Netflix</span><img src="icons/netflix.png" alt="netflix" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://trailers'" ><span>Watch Apple Trailers</span><img src="icons/trailers.png" alt="trailers" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://search'" ><span>File & Folder Search</span><img src="icons/search.png" alt="search" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://im'" ><span>Instant Messenger</span><img src="icons/im.png" alt="im" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://idev'" ><span>iDevices Manager</span><img src="icons/idev.png" alt="idev" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://remote'" ><span>Remote Desktop</span><img src="icons/remote.png" alt="remote" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://xbmc'" ><span>Install XBMC</span><img src="icons/xbmc.png" alt="xbmc" ></a>						
+						<a href="#" class="tooltip" onclick="location.href='script://netflix'" ><span>Install Netflix</span><img src="icons/netflix.png" alt="netflix" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://trailers'" ><span>Install Apple Trailers Browser Plugin</span><img src="icons/trailers.png" alt="trailers" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://search'" ><span>Install File & Folder Search</span><img src="icons/search.png" alt="search" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://idev'" ><span>Install iDevices Manager</span><img src="icons/idev.png" alt="idev" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://remote'" ><span>Install Remote Desktop</span><img src="icons/remote.png" alt="remote" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://teamviewer'" ><span>Install Teamviewer</span><img src="icons/teamviewer.png" alt="teamviewer" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://weather'" ><span>Install Weather Monitor</span><img src="icons/weather.png" alt="weather" ></a>						
 						<br><br>
-						<a href="#" class="tooltip" onclick="location.href='script://test'" ><span>Remote Desktop</span><img src="icons/remote.png" alt="remote" ></a>						
+						<a href="#" class="tooltip" onclick="location.href='script://deluge'" ><span>Install Deluge Torrent Client</span><img src="icons/deluge.png" alt="deluge" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://virtualbox'" ><span>Install Virtualbox</span><img src="icons/virtualbox.png" alt="virtualbox" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://wine'" ><span>Install Wine Run Windows Software</span><img src="icons/wine.png" alt="wine" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://openshot'" ><span>Install Openshot Video Editing Software</span><img src="icons/openshot.png" alt="openshot" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://re'" ><span>Install Restricted Extras</span><img src="icons/re.png" alt="re" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://guvcview'" ><span>Install Guvcview Webcam Software</span><img src="icons/guvcview.png" alt="guvcview" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://games'" ><span>Install a Games Pack</span><img src="icons/games.png" alt="games" ></a>
+						<a href="#" class="tooltip" onclick="location.href='script://keepassx'" ><span>Install Keepassx Password Management</span><img src="icons/keepassx.png" alt="keepassx" ></a>						
 						</div>
 						</div>
 						</div>
@@ -102,20 +108,20 @@
 								<h1>{string_18}</h1>
 								<p>{string_19}</p>
 								<img class="help" onclick="location.href=('help://')" src="images/help.png" >
-							</div>
+							</div>  
 						</article>
 						<div id="contents">
 						{desktop_list}
 						<br><br>
 						<div id="box">
-						<div id="box_title">{string_35}</div>
-						<div id="box_content"><p>{string_36}</p>
-						<div align="center">					
+<!-- Future feature				<div id="box_title">{string_35}</div> -->
+						<div id="box_content">  <!-- Future feature <p>{string_36}</p> -->
+						<div align="center">				
+<!-- Future feature				<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
 						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
 						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
-						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
-						</div>	
+						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a> -->
+						</div>
 						</div>
 						</div>
 						</div>
@@ -146,7 +152,7 @@
 						{hardware_list}
 						<br><br>
 						<div id="box">
-						<div id="box_title">{string_41}</div>
+				<!--		<div id="box_title">{string_41}</div>
 						<div id="box_content"><p>{string_42}</p>
 						<div align="center">	
 						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
@@ -154,20 +160,20 @@
 						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
 						<a href="#" class="tooltip" onclick="location.href='script://scriptname'" ><span>Something</span><img src="icons/blank.svg" alt="something" ></a>
 						</div>
-						</div>
+						</div> -->
 						</div>
 						</div>
 					</div>
-					<div id="tab-6" class="tab">
+						<div id="tab-6" class="tab">
 						<article>
 							<div class="text-section">
-								<img id="solgan" src="icons/other.png" />
+								<img id="solgan" src="icons/samba.png" />
 								<h1>{string_24}</h1>
 								<p>{string_25}</p>
 							</div>
 						</article>
 						<div id="contents">
-						{other_list}
+						{networking_list}
 						</div>
 					</div>
 					

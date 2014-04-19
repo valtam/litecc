@@ -19,7 +19,7 @@ html {height:100%; overflow-x :hidden; -webkit-user-select: none; cursor:default
 body {
 	background-image: url("../images/noise.png");
 	margin:0;
-	font:13px/14px "Ubuntu", sans-serif;
+	font:13px/14px "Ubuntu", sans-serif;  /*App default font size*/
 	color:#8a8a8a;
 	
 	height:100%;
@@ -35,7 +35,7 @@ body {
 	left: 25%;
 	width: 400px;
 	height: 250px;
-   margin: 0 auto;
+   	margin: 0 auto;
 	background-color: #fff;
 	border: 1px solid #ddd;
 	border-radius: 0 0 10px 10px ;
@@ -127,6 +127,8 @@ top: 0;
 [dir=rtl] #solgan {
 	float: right;
 	margin-left:10px;
+
+/*Rectangular buttons on each tab eg. Install Updates*/
 	
 }.launcher {
     border-color: transparent;
@@ -135,7 +137,7 @@ top: 0;
     border-width: 1px;
     display: inline-block;
     padding-bottom: 5px;
-    width: 320px;
+    width: 340px;
     padding-top: 5px;
     margin: 3px;
     position: relative;
@@ -168,10 +170,13 @@ top: 0;
     margin-top: 24px;
     position: absolute;
 }
+
+/*Rectangular buttons - icons on each tab*/
+
 .launcher img {
 	opacity: 1;
-	height: 48px;
-	width: 48px;
+	height: 38px;
+	width: 38px;
 	float: right;
 }
 [dir=ltr] .launcher img { float: left; }
@@ -244,6 +249,8 @@ margin-left: auto;
 	display:block;
 	height:100%;
 }
+
+/*Buttons - left hand side tabs, System Information, Software etc*/
 
 .buttons {
 	list-style:none;
@@ -388,9 +395,12 @@ margin-left: auto;
 {
   visibility: visible;
 }
+
+/*System Information tab, bottom web link icons*/
+
 .link {
-	padding: 5px; 
-	width: 49px; 
+	padding: 10px; /*space between icons*/
+	width: 48px; 
 	display: inline-block; 
 	cursor : pointer;
 	}
@@ -398,7 +408,7 @@ margin-left: auto;
 	  padding-bottom: 2px;
 }
 .link p {
-	text-align: center;
+	text-align:center;
 }
 .input-box {
 	 background: none repeat scroll 0 0 padding-box rgba(255, 255, 255, 0.898);

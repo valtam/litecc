@@ -1,5 +1,0 @@
-[module]
-name = Configure Workspaces
-ico = workspaces.png
-desc = Add or Remove Workspaces
-command = xfwm4-workspace-settings

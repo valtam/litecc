@@ -8,7 +8,8 @@
 # Main window dialogue.
  INSTALLER_TITLE="Remmina Remote Desktop Installer
 -----------------------------------------------------------------------------------------------------
-This will install the Remmina Remote Desktop Client for Windows(RDP) and VNC Servers.
+This will install the Remmina Remote Desktop Client for Windows (RDP)
+and VNC Servers.
 
 When you click on Yes, this window will close and the install will begin.
 The install time will vary based on your internet connection and computer.
@@ -19,7 +20,7 @@ Once installed, Remmina is located in Menu, Internet.
 Click on Yes to continue or No to cancel the installation."
 
 # Call the zenity window icon location.
- INSTALL_ICON="/usr/share/icons/zenity_ll.png"
+ INSTALL_ICON="/usr/share/litecc/frontend/icons/zenity-llcc.png"
  APPNAME="remmina"
         
         zenity --question --title="$APPNAME Installer" --window-icon="${INSTALL_ICON}" --text="${INSTALLER_TITLE}"
@@ -41,7 +42,7 @@ Click on Yes to continue or No to cancel the installation."
                 fi
 
 
-PROCEED=$(zenity --question --title="Linux Lite Additional Programs Installer" --window-icon=/usr/share/icons/zenity_ll.png --text="The installation has finished.\n\nWould you like to launch $APPNAME now?"; echo $?)
+PROCEED=$(zenity --question --title="Linux Lite Additional Programs Installer" --window-icon=/usr/share/litecc/frontend/icons/zenity-llcc.png --text="The installation has finished.\n\nWould you like to launch $APPNAME now?"; echo $?)
 if [ ${PROCEED} -eq 1 ]; then
 	zenity --info --title="Finished" --window-icon="${INSTALL_ICON}" --text="Install Complete.\n\n$APPNAME is located in Menu, Internet"
 	exit;
